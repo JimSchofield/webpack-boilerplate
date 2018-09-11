@@ -1,0 +1,25 @@
+my-drawer .open {
+    cursor: pointer;
+}
+
+my-drawer .content {
+    box-sizing: border-box;
+
+    display: block;
+    padding: 0 1em;
+    max-height: 0px;
+    color: white;
+    font-family: 'avenir';
+    font-weight: lighter;
+    font-size: 20px;
+    background: gray;
+    overflow: hidden;
+
+    transition: max-height 300ms linear,
+        padding 300ms linear;
+}
+
+my-drawer[open] .content {
+    padding: 1em;
+    max-height: 67px;
+}
